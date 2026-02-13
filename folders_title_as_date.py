@@ -14,7 +14,7 @@ def create_folders_date_name(current_date):
     curr_day_num=today_timetuple.tm_yday
     rem_days=365-curr_day_num
 
-    for i in range(rem_days+2):
+    for i in range(rem_days+1):
         folder_date=todays_date + timedelta(days= i)
         # converts datetime objet to string
         folder_name=datetime.strftime(folder_date,"%Y-%m-%d")
