@@ -1,6 +1,6 @@
 import os
 from datetime import datetime, timedelta,date
-
+#Taking User Input
 current_date=input("Enter date to create folders of remaining days in year in YYYY-M-D:")
 def create_folders_date_name(current_date):
     # getting todays_date from input
