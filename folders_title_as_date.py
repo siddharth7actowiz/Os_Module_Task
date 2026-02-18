@@ -31,7 +31,7 @@ def create_files_inside_folders_date_name(current_date):
         folder_name=datetime.strftime(folder_date,"%Y-%m-%d")
         # creating repositories
         print(folder_name)
-        os.mkdir(f"D:/Siddharth/files _with_dt_name_in_dt_folder/{folder_name}")
+         os.makedirs(f"D:/Siddharth/files _with_dt_name_in_dt_folder/{folder_name}",exist_ok=True)
 
         #monthrange functon to find total days in a moth
         last_day_month=monthrange(folder_date.year,folder_date.month)[1]
